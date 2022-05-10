@@ -18,14 +18,14 @@
         android:inputType="textPersonName"
         android:text="File Name"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView1"
+        app:layout_constraintBottom_toTopOf="@+id/etFileName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.53" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/etFileName"
         android:layout_width="327dp"
         android:layout_height="51dp"
         android:layout_marginStart="45dp"
@@ -51,13 +51,13 @@
         android:inputType="textPersonName"
         android:text="Student Name"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/etStudentName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+        app:layout_constraintTop_toBottomOf="@+id/etFileName" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/etStudentName"
         android:layout_width="327dp"
         android:layout_height="49dp"
         android:layout_marginTop="4dp"
@@ -80,13 +80,13 @@
         android:inputType="textPersonName"
         android:text="CGPA"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/etCGPA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/etStudentName" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/etCGPA"
         android:layout_width="327dp"
         android:layout_height="51dp"
         android:layout_marginStart="45dp"
@@ -94,14 +94,14 @@
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="75dp"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintBottom_toTopOf="@+id/btWrite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btWrite"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -110,13 +110,13 @@
         android:layout_marginBottom="42dp"
         android:text="WRITE DATA"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btRead"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/etCGPA" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btRead"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -128,5 +128,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+        app:layout_constraintTop_toBottomOf="@+id/btWrite" />
 </androidx.constraintlayout.widget.ConstraintLayout>
